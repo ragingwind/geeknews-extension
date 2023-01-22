@@ -1,0 +1,25 @@
+{
+  "name": "geeknews-web-clipper",
+  "version": "1.0.0",
+  "description": "Geeknews Web Clipper",
+  "author": {
+    "name": "Jimmy Moon",
+    "email": "ragingwind@gmail.com",
+    "url": "https://ragingwind.me"
+  },
+  "keywords": [
+    "geeknews",
+    "web",
+    "clipper",
+    "extension"
+  ],
+  "scripts": {
+    "postinstall": "node ./scripts/link.js",
+    "build": "node ./scripts/build.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "type": "module",
+  "packageManager": "pnpm@7.24.3"
+}
