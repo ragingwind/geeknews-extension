@@ -4,16 +4,16 @@
     "manifest_version": 3,
     "description": "__MSG_appDescription__",
     "icons": {
-        "16": "./src/images/icon_x192.png",
-        "48": "./src/images/icon_x192.png",
-        "128": "./src/images/icon_x192.png"
+        "16": "./images/icon_x192.png",
+        "48": "./images/icon_x192.png",
+        "128": "./images/icon_x192.png"
     },
     "default_locale": "en",
     "action": {
         "default_title": "Clip to Geeknews"
     },
     "background": {
-        "service_worker": "./src/background.js"
+        "service_worker": "./background.js"
     },
     "permissions": [
         "tabs"
