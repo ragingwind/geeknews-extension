@@ -10,10 +10,14 @@ Chrome(Edge), Firefox, 그리고 Safari 의 익스텐션을 지원합니다. 각
 
 `./src` 에 있는 소스를 그대로 사용할 수 있습니다. 빌드 과정 없이 브라우저에 로딩이 가능합니다. `chrome://extensions/` 페이지에서 `Developer mode` 를 활성화 한 후에 `Load unpacked` 를 이용하여 빌드 된 익스텐션을 로딩합니다.
 
+<img width="1146" alt="Chrome" src="https://user-images.githubusercontent.com/124117/214009079-e6cee91c-42e1-4642-897e-21d5ebe3dba3.png">
+
+
 ## Firefox
 
 빌드 과정에서 `./src` 에 있는 `manifest.json` 의 내용을 업데이트 합니다. 현재는 background page 만을 지원함으로 manifest v3 할지라도 background service worker 로 동작하지 않기 때문입니다. 따라서 빌드를 한 후 `./dist/firefox` 에 있는 패키지를 Firefox 의 `about:debugging` 에서 `Load temporary extension` 기능을 이용해서 로컬 익스텐션을 사용합니다. 이 [문서](https://extensionworkshop.com/documentation/develop/debugging/)를 참고하세요.
 
+<img width="1146" alt="Firefox" src="https://user-images.githubusercontent.com/124117/214009060-a6ba69ec-ac63-4a7b-af80-b3d3753667e9.png">
 
 ## Safari
 
@@ -23,6 +27,8 @@ Chrome(Edge), Firefox, 그리고 Safari 의 익스텐션을 지원합니다. 각
 - Safari Menu > Developer > Allow Unsigned Extention 이 체크 되어 있야 합니다.
 
 다음 `*.app` 을 클릭하여 설치하고 Extension 메뉴에 현재 익스텐션 앱이 잘 로딩되어 있는지 확인하세요. 더 자세한 사항은 Safari Extension 개발이나 활용 문서들을 참고하세요.
+
+<img width="774" alt="Safari" src="https://user-images.githubusercontent.com/124117/214009053-0173cf2a-1466-40ad-8800-0c27f42671c4.png">
 
 # License
 
